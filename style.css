@@ -184,7 +184,7 @@ section {
     width: 280px;
     height: 190px;
     top: 2%;
-    margin-left: 4rem;
+    margin: 0 auto;
   }
   nav {
     min-height: 5vh;
