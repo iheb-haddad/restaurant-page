@@ -111,6 +111,45 @@ nav ul {
   font-family: "Pacifico", cursive;
   font-weight: normal;
 }
+
+@media (max-width: 955px) {
+  nav #logo {
+    text-align: center;
+  }
+}
+
+@media (max-width: 730px) {
+  html {
+    font-size: 50%;
+  }
+  nav {
+    text-align: center;
+  }
+
+  .main-head ul li {
+    font-size: 2.5rem;
+  }
+
+  .sub-contact ul li {
+    font-size: 2.2rem;
+  }
+  .sub-contact {
+    height: 170px;
+    top: 4.3rem;
+  }
+  #logo {
+    padding: 2rem;
+    font-size: 4rem;
+  }
+}
+@media (max-width: 410px) {
+  html {
+    font-size: 35%;
+  }
+  .main-head ul li:hover .sub-contact {
+    height: 570%;
+  }
+}
 /*----------------- home ----------------------*/
 #home {
   background-image: linear-gradient(to right, rgb(0, 0, 0, 1) 50%, transparent),
@@ -152,96 +191,40 @@ nav ul {
   background: rgb(29, 21, 21, 0.9);
   min-height: 87vh;
   background-size: cover;
-  position: relative;
-  display: flex;
 }
-/* .father {
+
+.menu-box {
   display: flex;
-  width: 80%;
   justify-content: space-between;
+  align-items: center;
   flex-wrap: wrap;
-} */
+}
+.menu-box .col {
+  text-align: center;
 
-.spagetti {
-  position: absolute;
-  left: 10%;
+  flex: 1 1 30rem;
+  padding: 1rem 2rem;
+  border-radius: 0.7rem;
+  margin: 0.8rem 1.3rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
 }
 
-.food {
-  position: absolute;
-  left: 12%;
-  top: 25%;
+.menu-box .col img {
+  height: 15rem;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
-.list1 {
-  position: absolute;
+.menu-box .col .icon {
+  width: 45%;
+  height: 1%;
+}
+.menu-box .col p {
   color: #fff;
-  font-size: 1.9rem;
-  left: 5%;
-  top: 35%;
+  font-size: 1.7rem;
+  padding: 1rem 0;
 }
-
-.drinks {
-  position: absolute;
-  left: 44%;
-  top: 36%;
-}
-.list2 {
-  position: absolute;
-  color: #fff;
-  font-size: 1.9rem;
-  left: 38%;
-  top: 46%;
-}
-
-.dessert {
-  position: absolute;
-  left: 75%;
-  top: 25%;
-}
-.list3 {
-  position: absolute;
-  color: #fff;
-  font-size: 1.9rem;
-  left: 68%;
-  top: 35%;
-}
-
-.burger {
-  position: absolute;
-  left: 40%;
-  top: 5%;
-}
-
-.pizza {
-  position: absolute;
-  left: 71%;
-  top: 5%;
-}
-
-.jus {
-  position: absolute;
-  left: 70%;
-  top: 68%;
-}
-
-/* .father div {
-  background-color: aliceblue;
-  width: calc(80% / 3);
-  height: 350px;
-  border-radius: 10px;
-  border-color: black;
-  border: 10px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: relative;
-  top: 20%;
-}
-
-.father img {
-  position: relative;
-  top: 20px;
-} */
 
 /*------------------ Services------------------------*/
 .services {
