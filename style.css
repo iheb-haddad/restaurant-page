@@ -189,7 +189,7 @@ nav ul {
   position: absolute;
   color: #fff;
   font-size: 1.9rem;
-  left: 37%;
+  left: 38%;
   top: 46%;
 }
 
@@ -243,46 +243,71 @@ nav ul {
   top: 20px;
 } */
 
-@media (max-width: 990px) {
-  h3 {
-    font-size: 2.3rem;
-  }
+/*------------------ Services------------------------*/
+.services {
+  background: rgb(29, 21, 21, 0.9);
+  min-height: 100vh;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 0 9%;
+  padding-top: 7.5rem;
 }
-@media (max-width: 830px) {
-  html {
-    font-size: 50%;
-  }
-  nav {
-    text-align: center;
-  }
 
-  .main-head ul li {
-    font-size: 2.5rem;
-  }
+.special-heading {
+  font-size: 4.5rem;
+  text-align: center;
 
-  .sub-contact ul li {
-    font-size: 2.2rem;
-  }
-  .sub-contact {
-    height: 170px;
-    top: 4.3rem;
-  }
-  #logo {
-    padding: 2rem;
-    font-size: 4rem;
-    text-align: center;
-  }
-  .father {
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .father div {
-    width: 280px;
-    height: 190px;
-    top: 2%;
-    margin: 0 auto;
-  }
-  nav {
-    min-height: 5vh;
-  }
+  padding: 1rem;
+  background: var(--gradient);
+  color: rgb(252, 178, 178);
+  text-transform: uppercase;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
+.button {
+  background: var(--gradient);
+  border-radius: 5rem;
+  color: brown;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  margin-top: 1rem;
+  font-size: 2.7rem;
+  transition: 0.5s ease-out;
+}
+.button:hover {
+  transform: scale(1.1);
+}
+
+.services-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.services-box .col {
+  text-align: center;
+  background-color: rgb(219, 204, 204);
+  flex: 1 1 30rem;
+  padding: 3rem 2rem;
+  border-radius: 0.7rem;
+  margin: 1.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
+.services-box .col img {
+  height: 15rem;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+.services-box .col h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  padding-top: 1rem;
+}
+.services-box .col p {
+  color: #666;
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+/*------------------------ -------------------------------*/
