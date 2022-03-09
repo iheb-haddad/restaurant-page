@@ -40,14 +40,19 @@ a {
 /*------------ header -------------*/
 
 .main-head {
-  background: #582f0e;
+  /* background: #582f0e; */
+  background: rgb(29, 21, 21, 0.5);
   color: #fff;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0 0.7rem 1rem rgba(0, 0, 0, 1);
 }
 #logo {
   text-align: start;
 }
 nav {
-  min-height: 15vh;
+  min-height: 13vh;
   display: flex;
   align-items: center;
   width: 90%;
@@ -65,9 +70,12 @@ nav ul {
   padding: 0.8rem 2rem;
   border-radius: 3px;
 }
-.active,
-.main-head ul li:hover {
+#active1 {
   background: #ddb892;
+}
+.main-head ul li:hover {
+  /* background: #ddb892; */
+  background: rgb(221, 184, 146, 0.5);
 }
 
 .main-head .fa {
@@ -85,7 +93,7 @@ nav ul {
   width: 110%;
   top: 100%;
   display: block;
-  background: #582f0e;
+  background: rgb(29, 21, 21, 0.5);
   margin-left: -15px;
   z-index: 1000;
 }
@@ -122,6 +130,7 @@ nav ul {
   html {
     font-size: 50%;
   }
+
   nav {
     text-align: center;
   }
@@ -154,11 +163,12 @@ nav ul {
 #home {
   background-image: linear-gradient(to right, rgb(0, 0, 0, 1) 50%, transparent),
     url("back-acceuil.jpg");
-  min-height: 85vh;
+  min-height: 100vh;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: relative;
 }
+
 #home p {
   font-size: 6rem;
   color: #fff;
@@ -173,14 +183,14 @@ nav ul {
 
 #home .titre {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 13%;
 }
 #home hr {
   width: 57%;
 }
 
-/*-----------------  Main  --------------------*/
+/*-----------------  Menu  --------------------*/
 #head {
   background: url("menu.jpg");
   min-height: 13vh;
@@ -229,11 +239,11 @@ nav ul {
 /*------------------ Services------------------------*/
 .services {
   background: rgb(29, 21, 21, 0.9);
-  min-height: 100vh;
   background-size: cover;
   min-height: 100vh;
   padding: 0 9%;
-  padding-top: 7.5rem;
+  /* padding-top: 7.5rem; */
+  padding-top: 20vh;
 }
 
 .special-heading {
@@ -293,4 +303,5 @@ nav ul {
   font-size: 1.4rem;
   padding: 1rem 0;
 }
+
 /*------------------------ -------------------------------*/
