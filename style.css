@@ -126,39 +126,6 @@ nav ul {
   }
 }
 
-@media (max-width: 730px) {
-  html {
-    font-size: 50%;
-  }
-
-  nav {
-    text-align: center;
-  }
-
-  .main-head ul li {
-    font-size: 2.5rem;
-  }
-
-  .sub-contact ul li {
-    font-size: 2.2rem;
-  }
-  .sub-contact {
-    height: 170px;
-    top: 4.3rem;
-  }
-  #logo {
-    padding: 2rem;
-    font-size: 4rem;
-  }
-}
-@media (max-width: 410px) {
-  html {
-    font-size: 35%;
-  }
-  .main-head ul li:hover .sub-contact {
-    height: 570%;
-  }
-}
 /*----------------- home ----------------------*/
 #home {
   background-image: linear-gradient(to right, rgb(0, 0, 0, 1) 50%, transparent),
@@ -305,3 +272,46 @@ nav ul {
 }
 
 /*------------------------ -------------------------------*/
+
+@media (max-width: 410px) {
+  html {
+    font-size: 35%;
+  }
+  .main-head ul li:hover .sub-contact {
+    height: 570%;
+  }
+}
+
+@media (max-width: 730px) {
+  html {
+    font-size: 50%;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  .main-head ul li {
+    font-size: 2.5rem;
+  }
+
+  .sub-contact ul li {
+    font-size: 2.2rem;
+  }
+  .sub-contact {
+    height: 170px;
+    top: 4.3rem;
+  }
+  #logo {
+    padding: 2rem;
+    font-size: 4rem;
+  }
+  #home {
+    background-image: linear-gradient(
+        to bottom,
+        rgb(0, 0, 0, 0.96) 35%,
+        transparent
+      ),
+      url("homeimage.jpg");
+  }
+}
