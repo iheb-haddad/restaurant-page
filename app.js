@@ -35,7 +35,7 @@ window.addEventListener('scroll',() =>{
         document.getElementById("active1").style.background="#ddb892";
         document.getElementById("active2").style.background="none";
        document.getElementById("active3").style.background="none";
-    }else if(scrolled<1668)
+    }else if(scrolled<1450)
     {
         document.getElementById("active2").style.background="#ddb892";
         document.getElementById("active1").style.background="none";
